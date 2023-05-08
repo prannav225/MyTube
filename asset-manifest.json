@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MyTube/static/css/main.01659e6f.css",
+    "main.js": "/MyTube/static/js/main.5e560252.js",
+    "index.html": "/MyTube/index.html",
+    "main.01659e6f.css.map": "/MyTube/static/css/main.01659e6f.css.map",
+    "main.5e560252.js.map": "/MyTube/static/js/main.5e560252.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01659e6f.css",
+    "static/js/main.5e560252.js"
+  ]
+}
