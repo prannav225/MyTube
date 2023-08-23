@@ -9,10 +9,10 @@ function App() {
         <Box sx={{ backgroundColor: '#252525' }}>
           <Navbar />
           <Routes>
-            <Route path='/' element={<Feed />} />
-            <Route path='/video/:id' element={<VideoDetails />} />
-            <Route path='/channel/:id' element={<ChannelDetails />} />
-            <Route path='/search/:searchTerm' element={<SearchFeed />} />
+            <Route path='/MyTube/' element={<Feed />} />
+            <Route path='MyTube/video/:id' element={<VideoDetails />} />
+            <Route path='MyTube/channel/:id' element={<ChannelDetails />} />
+            <Route path='MyTube/search/:searchTerm' element={<SearchFeed />} />
           </Routes>
         </Box>
       </BrowserRouter>
