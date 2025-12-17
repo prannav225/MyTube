@@ -2,7 +2,7 @@
 
 A stunning, fully functional YouTube clone application built with **React**, **Vite**, and **Material UI**. This project leverages the [RapidAPI YouTube v3 API](https://rapidapi.com/ytdl-org/api/youtube-v31) to fetch real-time video data, channels, and search results.
 
-## 🚀 Features
+##  Features
 
 - **Modern UI/UX**: Designed with Material UI, featuring a clean, responsive layout identical to YouTube.
 - **Light & Dark Mode**: Seamless toggle between light and dark themes with persistent state.
@@ -12,7 +12,7 @@ A stunning, fully functional YouTube clone application built with **React**, **V
 - **Category Filtering**: Browse videos by categories (Music, Coding, Gaming, etc.) with a pill-shaped navigation bar.
 - **Responsive Design**: Fully optimized for Desktop, Tablet, and Mobile devices.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend Framework**: React 19 (via Vite)
 - **UI Library**: Material UI (MUI) v6
@@ -22,7 +22,7 @@ A stunning, fully functional YouTube clone application built with **React**, **V
 - **API Fetching**: Axios
 - **API Provider**: RapidAPI (YouTube v3)
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository**
    ```bash
@@ -48,16 +48,8 @@ A stunning, fully functional YouTube clone application built with **React**, **V
    ```
    The app will run at `http://localhost:5173`.
 
-## 📦 Deployment
 
-This project is optimized for deployment on **Vercel**.
-
-1. Push your code to GitHub.
-2. Import the project in Vercel.
-3. Add the `VITE_RAPID_API_KEY` in the Vercel Environment Variables settings.
-4. Deploy!
-
-## 🤝 Credits
+##  Credits
 
 - API provided by [RapidAPI](https://rapidapi.com/).
 - Design inspiration from YouTube.
