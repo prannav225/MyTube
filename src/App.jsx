@@ -6,13 +6,13 @@ function App() {
   return (
     <div className="App">
      <BrowserRouter>
-        <Box sx={{ backgroundColor: '#252525' }}>
+        <Box sx={{ backgroundColor: 'background.default', minHeight: '100vh', color: 'text.primary' }}>
           <Navbar />
           <Routes>
-            <Route path='/MyTube/' element={<Feed />} />
-            <Route path='MyTube/video/:id' element={<VideoDetails />} />
-            <Route path='MyTube/channel/:id' element={<ChannelDetails />} />
-            <Route path='MyTube/search/:searchTerm' element={<SearchFeed />} />
+            <Route path='/' element={<Feed />} />
+            <Route path='/video/:id' element={<VideoDetails />} />
+            <Route path='/channel/:id' element={<ChannelDetails />} />
+            <Route path='/search/:searchTerm' element={<SearchFeed />} />
           </Routes>
         </Box>
       </BrowserRouter>

@@ -1,26 +1,48 @@
-import { Stack } from '@mui/material'
+import { Stack, useTheme } from '@mui/material'
 import React from 'react'
 import { categories } from '../utils/constants';
 
 
 const SideBar = ({selectedCategory, setSelectedCategory}) => {
+  const theme = useTheme();
 
   return (
     <Stack
       direction='row'
       sx={{
-        overflowY: 'auto', height: { sx: 'auto', md: '95%' },
-        flexDirection: { md: 'column' }
-      }}>
+        overflowX: 'auto',
+        height: 'auto',
+        pb: 1,
+        '&::-webkit-scrollbar': { display: 'none' }, // Hide scrollbar
+      }}
+    >
       {categories.map((category) => (
-        <button className='category-btn' 
-        onClick={()=>setSelectedCategory(category.name)}
-        style={{ background: category.name === selectedCategory && '#FC1503', color: '#fff' }}>
-          <span style={{
-            color: category.name === selectedCategory ? 'white' : 'red',
-            marginRight: '15px'
-          }}>{category.icon}</span>
-          <span style={{ opacity: category.name == selectedCategory ? '1' : '0.8' }}>{category.name}</span>
+        <button
+          className='category-btn' 
+          onClick={()=>setSelectedCategory(category.name)}
+          style={{
+            background: category.name === selectedCategory 
+                ? (theme.palette.mode === 'dark' ? '#fff' : '#000') 
+                : (theme.palette.mode === 'dark' ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.05)'),
+            color: category.name === selectedCategory 
+                ? (theme.palette.mode === 'dark' ? '#000' : '#fff') 
+                : theme.palette.text.primary,
+            borderRadius: '8px', 
+            fontWeight: '500',
+            fontSize: '14px',
+            border: 'none',
+            padding: '6px 12px',
+            marginRight: '12px',
+            cursor: 'pointer',
+            whiteSpace: 'nowrap',
+            transition: 'all 0.2s',
+            display: 'flex',
+            alignItems: 'center'
+          }}
+          key={category.name}
+        >
+          <span style={{ marginRight: '8px', display: 'flex', alignItems: 'center', opacity: 0.8 }}>{category.icon}</span>
+          <span>{category.name}</span>
         </button>
       ))}
     </Stack>

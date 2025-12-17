@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 
 
+import { ColorModeProvider } from './utils/ColorModeContext';
+import { CssBaseline } from '@mui/material';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ColorModeProvider>
+      <CssBaseline />
+      <App />
+    </ColorModeProvider>
   </React.StrictMode>
 );

@@ -14,7 +14,7 @@ import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import MovieFilterIcon from "@mui/icons-material/MovieFilter";
 
 
-export const logo = "My_tube.png";
+export const logo = "./My_tube.png";
 
 export const categories = [
   { name: "New", icon: <HomeIcon /> },
